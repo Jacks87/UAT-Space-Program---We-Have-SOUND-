@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--Jackelin Britton -->
+<html lang="en">
+    <script src="codeLogin.js"></script>
+    <link href="styleTables.css" rel="stylesheet" type="text/css" />
+    <head>
+        <title>UAT Space Login</title>
+    </head>
+
+    <body>
+        <h1 style="color:rgb(0, 102, 255)">Control Operator Login</h1>
+        <!--title1-->
+        <br>
+
+        <img src= "UATspaceLogo.jpg">
+        <!--to insert an image -->
+        <br>
+        <br>
+
+    <audio controls autoplay>
+        <source src="Liftoff.mp3" type="audio/mpeg">
+    </audio>
+    <br>
+        <p id="loginStatus" class="loginID" style="color: rgb(221, 0, 255);">Status of login...</p>
+        <br>
+        <form style="color: rgb(255, 247, 0);" id="credSubmit" onsubmit="return false">
+            <!--credsubmit to add credentials (user inputs name) -->
+            
+            First Name:     <input type="text" id="firstName" /> <br>
+            Last Name:      <input type="text" id="lastName" /> <br>
+            Badge Number:   <input type="number" id="badgeNumber" /> <br>
+            <input type="submit" onclick="checkCreds();" />
+        </form>
+    </body>
+
+</html>
